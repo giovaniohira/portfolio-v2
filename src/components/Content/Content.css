@@ -1,0 +1,16 @@
+.content {
+    max-width: 50%;
+    padding-top: 8rem;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.content p {
+    font-size: 1rem;
+    line-height: 2rem;
+    margin: 0;
+    padding: 0;
+}

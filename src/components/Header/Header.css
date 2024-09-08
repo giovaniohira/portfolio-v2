@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
+
+header {        
+    top: 0;
+    height: 100%;
+    position: sticky;
+    padding-top: 8rem;
+    color: #FAF9F6;
+}
+
+header h1 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 200;
+    font-size: 4rem;
+    margin: 0 0 -1.7rem 0;
+    padding: 0;
+}
+
+header .personal-desc {
+    max-width: 80%;
+    color: #ADADAD;
+}
+
+header .section-links {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: flex-start;
+}
+
+header hr {
+    border: 0;
+    margin-right: 1rem;
+    width: 50px;
+    height: 1px;
+    background: #ADADAD;
+    transition: all 0.3s ease;
+}
+header .link {
+    display: flex;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+header .link:hover hr {
+    width: 100px; /* Aumenta a largura da linha no hover */
+    transition: all 0.3s ease;
+}
+  
+header .link:hover .nav-link {
+    font-size: 1.2rem; /* Aumenta o tamanho da fonte no hover */
+    font-weight: bold; /* Deixa a fonte em negrito no hover */
+}
+
+header .nav-link.active {
+    hr {
+        width: 100px; /* Largura da linha no link ativo */
+        transition: all 0.3s ease;
+    }
+    font-weight: bold;
+    color: #FAF9F6; /* Cor diferente para o link ativo */
+}
+header .social-links {
+    padding-top: 20rem;
+}
+
+header .social-link {
+    padding: 0.25rem;
+}

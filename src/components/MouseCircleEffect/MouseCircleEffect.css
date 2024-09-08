@@ -1,0 +1,11 @@
+.circle {
+    position: fixed; /* Fixa o círculo em relação à viewport */
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    background: radial-gradient(rgba(33, 49, 88, 0.1), transparent 60%);
+    pointer-events: none; /* Não interfere nos eventos de clique */
+    transition: transform 0.1s ease-out;
+    z-index: 9999; /* Certifica que o círculo esteja sobre outros elementos */
+  }
+  
