@@ -1,9 +1,11 @@
+@import './variables.css';
+
 .App {
   scroll-behavior: smooth;
-  color: #ADADAD;
+  color: var(--color-secondary);
   display: flex;    
   height: 100%;
-  margin: 0 25rem 0 25rem;
+  margin: 0 clamp(1rem, 5rem, 25rem);
   justify-content: space-between;
 }
 
@@ -12,6 +14,26 @@
 }
 
 a {
-  color: #ADADAD;
+  color: var(--color-secondary);
   text-decoration: none;
+}
+@media (max-width: 640px) {
+
+}
+@media (max-width: 1024px) {
+  .App {
+    margin: 0 2.5rem;
+    flex-direction: column;
+    header {
+      height: auto;
+      position: relative;
+    }
+    .section-links {
+      display: none;
+    }
+    .content {
+      max-width: calc(100% - 2rem);
+      padding-top: 1rem;
+  }
+  }
 }

@@ -1,0 +1,46 @@
+{
+    "projects": [
+    {
+        "title": "Event Management API",
+        "description": "A RESTful API built with Express and PostgreSQL, designed for managing users, events, and subscriptions. This project includes JWT-based authentication, role-based access control, and CRUD operations with pagination. It also features a database installation and seeding process, along with comprehensive API documentation using Swagger.",
+        "technologies": ["Express", "Node.js", "Sequelize", "Postgres", "Swagger"],
+        "link": "https://github.com/giovaniohira/event-management-api",
+        "image": "url_para_imagem_projeto_1"
+    },
+    {
+        "title": "Fast Pages CMS",
+        "description": "A full content management system built with Node.js, Express, and Mustache for server-side templating. The system includes secure user authentication, content management, and database integration with PostgreSQL.",
+        "technologies": ["Express", "Node.js", "Postgres", "Mustache"],
+        "link": "https://github.com/dvisantana/projetoback-cms",
+        "image": "url_para_imagem_projeto_1"
+    },
+    {
+        "title": "Term.ooo Solver",
+        "description": "A solver for the popular word-guessing game Termooo, built in Python as part of a study about web scraping with Selenium lib. The app implements algorithms to analyze word history and suggest optimal guesses.",
+        "technologies": ["Python", "Selenium"],
+        "link": "https://github.com/giovaniohira/termooo-solver",
+        "image": "url_para_imagem_projeto_1"
+    },
+    {
+        "title": "Typespeed",
+        "description": "Jogo de digitação baseado em React, onde o jogador deve digitar as palavras corretamente dentro de um tempo limite.",
+        "technologies": ["React" ,"Gemini API"],
+        "link": "https://github.com/giovaniohira/type-speed",
+        "image": "url_para_imagem_projeto_3"
+    }
+    ],
+    "experiences": [
+        {
+            "role": "Fullstack Developer - XP Bootcamp",
+            "description": "Completei um intensivo bootcamp com foco em desenvolvimento fullstack, onde construí sistemas de hospedagem e APIs REST.",
+            "technologies": ["C#", "SQL", "Docker", "Azure", "NextJS"],
+            "date": "AUG - NOV 2024"
+        },
+        {
+            "role": "Desenvolvedor Backend",
+            "description": "Desenvolvi APIs RESTful escaláveis e eficientes usando Node.js e Express para clientes diversos.",
+            "technologies": ["Node.js", "Express", "PostgreSQL"],
+            "date": "MAR - OCT 2023"
+        }
+    ]
+}

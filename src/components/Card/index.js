@@ -1,15 +1,32 @@
 import './Card.css';
+import { RxExternalLink } from "react-icons/rx";
+import { IconContext } from "react-icons";
 
-const Card = ({ title, description, link, usedTecnologies }) => {
+const Card = ({ date, title, description, link, technologies, role }) => {
     return (
-        <div className='card'>
-            <h3>Event management API</h3>
-            <p>RESTful API built with Express and PostgreSQL for managing users, events, and subscriptions, featuring JWT authentication, role-based access, CRUD with pagination, database setup, and Swagger documentation.</p>
-            <a href={link}>View</a>
-            {usedTecnologies.map((technology, index) => (
-                <span key={index}>{technology}</span>
-            ))}
-        </div>
+        <a href={link} target="_blank" rel="noopener noreferrer">
+            <div className='card'>
+                <div className='card-left-details'>
+                    {date && <span className='date'>{date}</span>}
+                </div>
+                <div className='card-full-details'>
+                    <div className='card-title'>
+                        {title && <h3>{title}</h3>}
+                        {role && <h3 className='role'>{role}</h3>}
+                        {link &&                     
+                        <IconContext.Provider value={{ size: '0.8em', color: '#cfcfcf' }}>
+                            <RxExternalLink />
+                        </IconContext.Provider>}
+                    </div>
+                    <span className='desc'>{description}</span>
+                    <div className='technologies'>
+                        {technologies.map((technology, index) => (
+                            <span className='technology-badge' key={index}>{technology}</span>
+                        ))}
+                    </div>
+                </div>
+            </div>
+        </a>
     );
 };
 

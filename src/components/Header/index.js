@@ -65,13 +65,13 @@ const Header = () => {
                 </a>
             </div>
             <div className="social-links">
-                <a href="https://github.com/giovaniohira" className="social-link" aria-label="GitHub">
-                    <IconContext.Provider value={{ size: '3em', color: '#FAF9F6' }}>
+                <a href="https://github.com/giovaniohira" className="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                    <IconContext.Provider value={{ size: '2.5em', color: '#cfcfcf' }}>
                         <FaGithub />
                     </IconContext.Provider>
                 </a>
-                <a href="https://www.linkedin.com/in/giovaniohira/" className="social-link" aria-label="LinkedIn">
-                    <IconContext.Provider value={{ size: '3em', color: '#FAF9F6' }}>
+                <a href="https://www.linkedin.com/in/giovaniohira/" className="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <IconContext.Provider value={{ size: '2.5em', color: '#cfcfcf' }}>
                         <FaLinkedinIn />
                     </IconContext.Provider>
                 </a>

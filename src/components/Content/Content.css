@@ -1,16 +1,33 @@
+@import '../../variables.css';
+
+
 .content {
     max-width: 50%;
-    padding-top: 8rem;
+    padding: 6rem 0 4rem 0;
 }
+
+.about-desc {
+    color: var(--color-secondary);
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
 section{
     display: flex;
     flex-direction: column;
-    height: 100vh;
 }
 
-.content p {
+.desc-p {
+    margin-bottom: 10px;
+}
+
+.content h2 {
+    color: var(--color-primary);
+    margin-bottom: 0.4rem;
+    margin-top: 5rem;
+}
+
+.content .resume {
+    color: #00FFC2;
     font-size: 1rem;
-    line-height: 2rem;
-    margin: 0;
-    padding: 0;
 }
