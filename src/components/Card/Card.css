@@ -19,6 +19,7 @@
 /* Card details */
 .card-left-details {
     width: 40%;
+    margin-right: 2rem;
 }
 
 .card-full-details {
@@ -37,6 +38,12 @@
     justify-content: flex-start;
 }
 
+.card .card-image{
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    max-width: 13rem;
+    max-height: 8rem;
+    border-radius: 10px;
+}
 .card .date {
     font-size: 0.9rem;
     font-weight: 700;
@@ -66,7 +73,12 @@
 .card:hover h3 {
     color: #28ffcd;
 }
-
+@media (max-width: 1024px) {
+    .card-left-details {
+        display: flex;
+        justify-content: flex-end;
+    }
+  }
 @media (max-width: 640px) {
   .card {
     flex-direction: column;

@@ -8,9 +8,7 @@ const Content = () => {
         <section id="about">
                 <h2>ABOUT</h2>
                 <span className='about-desc'>
-                <p className='desc-p'>👋 Hi, I'm Giovani! A passionate back-end developer seeking my first professional opportunity. I specialize in building RESTful APIs with Node.js/Express and creating interactive front-end experiences with React.</p>
-                <p className='desc-p'>I'm eager to expand my knowledge in software architecture, best practices, and cutting-edge technologies. I enjoy solving complex problems, from optimizing algorithms to designing databases and enhancing UI.
-                Outside of coding, I love video games, painting, and watching series.</p> 
+                <p className='desc-p'>👋 Hi, I'm Giovani! A passionate back-end developer seeking my first professional opportunity. I specialize in building <b>RESTful APIs with Node.js/Express</b> and creating interactive front-end experiences with <b>React</b>.</p>
                 <p className='desc-p'>Excited to begin my tech journey! Check out my projects and connect with me on GitHub!</p>
                 </span>
             </section>
@@ -40,6 +38,7 @@ const Content = () => {
                         description={project.description}
                         link={project.link}
                         technologies={project.technologies}
+                        image={project.image}
                     />
                 ))}
         </section>
